@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Gerador QR-Code ::.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <div class="titulo">
+            Gerador QR Code
+        </div>
+        <input class="dado" type="text" name="dado" id="dado" placeholder="Digite um dado">
+        <select class="tamanho" name="tamanho" id="tamanho">
+            <option value="small">Pequeno</option>
+            <option value="medium">Medio</option>
+            <option value="large">Grande</option>
+        </select>
+        <input class="botao" type="submit" value="Gerar" onclick="gerar()">   
+        <div class="resultado">
+                <img id="qrcode_gerado">
+                <div id="mensagem"></div>
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
